@@ -50,3 +50,30 @@ adaptive_taxonomy_mapper/
 │
 └── outputs/              # Generated results (created at runtime)
 ```
+## How to Run Locally
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/AjayKumar-KK/adaptive_taxonomy_mapper.git
+cd adaptive_taxonomy_mapper
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the Streamlit demo
+```bash
+streamlit run demo/app.py
+```
+
+### 4. Run batch processing (optional)
+```bash
+python main.py
+```
+
+Batch results will be saved in:
+```text
+outputs/results.json
+```
