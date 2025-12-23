@@ -33,7 +33,7 @@ adaptive_taxonomy_mapper/
 ├── .gitignore
 │
 ├── src/
-│   ├── init.py
+│   ├── __init__.py
 │   └── mapper.py         # Core taxonomy mapping logic
 │
 ├── demo/
