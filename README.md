@@ -1,23 +1,49 @@
 # Adaptive Taxonomy Mapper
 
-## Quickstart
+An explainable, rule-based system that maps **noisy user-generated tags and story descriptions** into a **clean internal fiction taxonomy**.  
+This project demonstrates **problem-solving ability, system design, and deployment skills**, suitable for real-world content and recommendation platforms.
 
-### 1) Run batch mapping on the Golden Set
-```bash
-python main.py
-```
-Outputs: `outputs/results.json`
+---
 
-### 2) Run the demo interface (Streamlit)
-```bash
-pip install -r requirements.txt
-streamlit run demo/app.py
-```
+## About the Project
 
-## Files
-- `main.py` — runnable main entrypoint (batch runner)
-- `src/mapper.py` — core mapping engine
-- `data/taxonomy.json` — internal taxonomy
-- `data/test_cases.json` — golden test cases
-- `docs/SYSTEM_DESIGN.md` — system design notes
-- `demo/app.py` — Streamlit demo UI
+In many content platforms, users add tags like *Action*, *Love*, or *Scary*.  
+These tags are often **inaccurate or too generic**, which leads to poor recommendations and analytics.
+
+The **Adaptive Taxonomy Mapper** solves this problem by:
+- Analyzing the **story context**
+- Giving higher importance to content than user tags
+- Mapping stories to a **controlled taxonomy**
+- Avoiding forced or incorrect classifications
+- Explaining **why** a category was chosen
+
+---
+
+## Live Demo
+
+**Streamlit Deployment Link:**  
+https://adaptive-taxonomy-mapper.streamlit.app 
+
+## Project Structure
+adaptive_taxonomy_mapper/
+│
+├── main.py               # Batch execution script
+├── requirements.txt      # Project dependencies
+├── README.md             # Project documentation
+├── .gitignore
+│
+├── src/
+│   ├── init.py
+│   └── mapper.py         # Core taxonomy mapping logic
+│
+├── demo/
+│   └── app.py            # Streamlit demo application
+│
+├── data/
+│   ├── taxonomy.json     # Predefined taxonomy
+│   └── test_cases.json   # Sample test cases
+│
+├── docs/
+│   └── SYSTEM_DESIGN.md  # Detailed system design
+│
+└── outputs/              # Generated results (created at runtime)
