@@ -25,6 +25,8 @@ The **Adaptive Taxonomy Mapper** solves this problem by:
 https://adaptive-taxonomy-mapper.streamlit.app 
 
 ## Project Structure
+
+```text
 adaptive_taxonomy_mapper/
 │
 ├── main.py               # Batch execution script
@@ -47,3 +49,4 @@ adaptive_taxonomy_mapper/
 │   └── SYSTEM_DESIGN.md  # Detailed system design
 │
 └── outputs/              # Generated results (created at runtime)
+```
